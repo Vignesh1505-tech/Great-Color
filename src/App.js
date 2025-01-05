@@ -8,11 +8,11 @@ export default function App() {
   return (
     <Router>
       <Layout>
-<Routes>
-  <Route path="/" element={<Home/>}/>
-</Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </Layout>
     </Router>
-    
+
   )
 }

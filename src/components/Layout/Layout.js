@@ -3,9 +3,9 @@ import Header from "../Header";
 import PropTypes from "prop-types";
 
 const Layout = ({ children }) => (
-  <div className="flex flex-col min-h-screen">
+  <div className="">
     <Header />
-    <main className="flex-grow">{children}</main>
+    <main className="">{children}</main>
     <Footer />
   </div>
 );

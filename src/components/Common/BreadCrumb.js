@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { navLinks } from "../../constants";
+//import { navLinks } from "../../constants";
 
 const Breadcrumb = () => {
   const location = useLocation();
