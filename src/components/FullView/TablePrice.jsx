@@ -3,6 +3,7 @@ import React from 'react'
 const TablePrice = ({data}) => {
   return (
     <div className="relative  sm:rounded-lg w-[20%]">
+      <h1></h1>
       <table className="w-full text-sm text-left border-collapse">
         <thead className="text-xs uppercase bg-[#F3F3F3]">
           <tr>
