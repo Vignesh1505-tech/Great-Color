@@ -33,7 +33,12 @@ const CustomCarousel = () => {
         infinite={false}
         autoPlay={false}
         containerClass="carousel-container"
+<<<<<<< HEAD
         itemClass="p-2"
+=======
+        itemClass="p-2 "
+        
+>>>>>>> master
       >
         {carousel.map((item) => (
           <div key={item.id} className="text-center lg:mx-3">
