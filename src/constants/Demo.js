@@ -8192,7 +8192,7 @@ export const officeData = [
 
 export const signageData = [
   {
-    header: "Sign Board / Signage",
+    header: "Sign Board | Signage",
     items: [
       {
         id: 1,
@@ -20409,41 +20409,276 @@ export const carousel =[
   {
     id:1,
     imageUrl:"https://www.dlxprint.com/images/office&store_branding/printed_frosted_sticker_dubai.webp",
-    text:"Printed Frosted sticker"
+    text:"Printed Frosted sticker",
+    data:officeData[0].items[0]
   },
   {
     id:2,
     imageUrl:"https://www.dlxprint.com/images/signages/ss_mirror_finish_backlit_signage_dubai.webp",
-    text:'Reception Signage'
+    text:'Reception Signage',
+    data:signageData[0].items[1]
   },
   {
     id:3,
     imageUrl:"https://www.dlxprint.com/images/office&store_branding/wooden_frames_dubai.webp",
-    text:"Wooden Frames"
+    text:"Wooden Frames",
+    data:officeData[6].items[1]
   },
   {
     id:4,
     imageUrl:"https://www.dlxprint.com/images/backdrops&exhibition/totem_self_standee_01.webp",
-    text:"Totem Self Standee"
+    text:"Totem Self Standee",
+    data:backdropsData[0].items[4]
   },
   {
     id:5,
     imageUrl:"https://www.dlxprint.com/images/office&store_branding/ceremonial_ribbon_printing_dubai_01.webp",
-    text:"Ceremonial Ribbon"
+    text:"Ceremonial Ribbon",
+    data:officeData[11].items[0]
   },
   {
     id:6,
     imageUrl:"https://www.dlxprint.com/images/office&store_branding/floor_sale_sticker_dubai.webp",
-    text:"Floor Sticker"
+    text:"Floor Sticker",
+    data:officeData[2].items[0]
   },
   {
     id:7,
     imageUrl:"https://www.dlxprint.com/images/office&store_branding/standard_posters_dubai.webp",
-    text:"Poster"
+    text:"Poster",
+    data:officeData[7].items[0]
   },
   {
     id:8,
     imageUrl:"https://www.dlxprint.com/images/office&store_branding/acrylic_frames_dubai.webp",
-    text:"Acrylic Frames"
+    text:"Acrylic Frames",
+    data:officeData[6].items[2]
+  }
+]
+
+export const banner=[
+  {
+    id:1,
+    image:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737650440/sample/qthvranjtlzllbxdph8j.webp"
+  },
+  {
+    id:2,
+    image:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737650440/sample/homs7raguaanpf3yv7g5.webp"
+  },
+  {
+    id:3,
+    image:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737650440/sample/pw6vpfc8ffsvwzxmysyz.webp"
+  },
+  {
+    id:4,
+    image:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737650440/sample/iomntgnbgdvbggg0o0ty.webp"
+  },
+  {
+    id:5,
+    image:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737650440/sample/paey2k4by6dkxequhqh8.webp"
+  },
+  {
+    id:6,
+    image:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737650440/sample/hdvuyzuiikwyedjnuqfk.webp"
+  },
+  {
+    id:7,
+    image:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737650440/sample/yln2bxrlgmqe9taqotki.webp"
+  }
+]
+
+export const offeringfeature=[
+  {
+    id:1,
+    name:"Google Rating",
+    data:"4.8 ⭐⭐⭐⭐⭐",
+    img:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737729407/google_icon_afussj.png"
+  },
+  {
+    id:2,
+    name:"Chat or Email Us",
+    img:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737729407/chat_with_us_x2nqgk.png"
+  },
+  {
+    id:3,
+    name:"Safe and Secure Payment Processing",
+    img:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737729407/secure-payment_hrli45.png"
+  },
+  {
+    id:4,
+    name:"Flexible Venue Delivery",
+    img:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737729407/delivery_icon_b6bkxv.png"
+  }
+]
+
+export const TradeShow=[
+  {
+    id:1,
+    title:"Trade Show",
+    items:[
+      {
+        id:1,
+        name:"Booklets",
+        img:"https://res.cloudinary.com/dlz61swsc/image/upload/v1735556097/t2c7qauqrzubti0ly5y8.webp",
+        data:PrintData[2].items[2]
+      },
+      {
+        id:2,
+        name:"Table Cloth",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735983524/lzkdmeo67xlkielzbuxl.webp",
+        data:textileData[3].items[2]
+      },
+      {
+        id:3,
+        name:"Vinyl",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1736511761/rc06wx0lu05yfqjn98sx.webp",
+        data:backdropsData[1].items[1]
+      },
+      {
+        id:4,
+        name:"L Shape Flags",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735642027/fuaxhmgelxkwbcm0kjey.webp",
+        data:flagsData[0].items[2]
+      },
+      {
+        id:5,
+        name:"Business Cards",
+        img:"https://res.cloudinary.com/dlz61swsc/image/upload/v1735554088/ttkplpax0qhuhamqvxwp.webp",
+        data:PrintData[0].items[0]
+      },
+      {
+        id:6,
+        name:"Lanyards",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735724225/qhyljjnziwhyiiq2qimt.webp",
+        data:corporateData[2].items[2]
+      },
+      {
+        id:7,
+        name:"Tote Bags",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735725337/yjsqpffxdmfmeeehtgpg.webp",
+        data:corporateData[4].items[4]
+      },
+      {
+        id:8,
+        name:"Rollup Banner",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735647777/tritybsc33mycfucwabl.webp",
+        data:backdropsData[0].items[0]
+      }
+    ]
+
+  }
+]
+
+export const layout =[
+  {
+    id:1,
+    img:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737871323/pos_display_banner_igga4n.webp",
+    path:""
+  },
+  {
+    id:2,
+    img:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737871323/signage_banner_x9wxjz.webp",
+    path:""
+  },
+  {
+    id:3,
+    img:"https://res.cloudinary.com/do0dujhy5/image/upload/v1737871323/neon_signage_un5cfx.webp",
+    path:""
+  }
+]
+
+export const BestProd=[
+  {
+    id:1,
+    title:"LifeStyle",
+    items:[
+      {
+        id:1,
+        name:"Booklets",
+        img:"https://res.cloudinary.com/dlz61swsc/image/upload/v1735556097/t2c7qauqrzubti0ly5y8.webp",
+        data:PrintData[2].items[2]
+      },
+      {
+        id:2,
+        name:"Table Cloth",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735983524/lzkdmeo67xlkielzbuxl.webp",
+        data:textileData[3].items[2]
+      },
+      {
+        id:3,
+        name:"Vinyl",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1736511761/rc06wx0lu05yfqjn98sx.webp",
+        data:backdropsData[1].items[1]
+      },
+      {
+        id:4,
+        name:"L Shape Flags",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735642027/fuaxhmgelxkwbcm0kjey.webp",
+        data:flagsData[0].items[2]
+      },
+     
+    ]
+
+  },
+  {
+    id:2,
+    title:"Just for you",
+    items:[
+      {
+        id:1,
+        name:"Booklets",
+        img:"https://res.cloudinary.com/dlz61swsc/image/upload/v1735556097/t2c7qauqrzubti0ly5y8.webp",
+        data:PrintData[2].items[2]
+      },
+      {
+        id:2,
+        name:"Table Cloth",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735983524/lzkdmeo67xlkielzbuxl.webp",
+        data:textileData[3].items[2]
+      },
+      {
+        id:3,
+        name:"Vinyl",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1736511761/rc06wx0lu05yfqjn98sx.webp",
+        data:backdropsData[1].items[1]
+      },
+      {
+        id:4,
+        name:"L Shape Flags",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735642027/fuaxhmgelxkwbcm0kjey.webp",
+        data:flagsData[0].items[2]
+      },
+    ]
+  },
+  {
+    id:3,
+    title:"Decor",
+    items:[
+      {
+        id:1,
+        name:"Booklets",
+        img:"https://res.cloudinary.com/dlz61swsc/image/upload/v1735556097/t2c7qauqrzubti0ly5y8.webp",
+        data:PrintData[2].items[2]
+      },
+      {
+        id:2,
+        name:"Table Cloth",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735983524/lzkdmeo67xlkielzbuxl.webp",
+        data:textileData[3].items[2]
+      },
+      {
+        id:3,
+        name:"Vinyl",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1736511761/rc06wx0lu05yfqjn98sx.webp",
+        data:backdropsData[1].items[1]
+      },
+      {
+        id:4,
+        name:"L Shape Flags",
+        img:"https://res.cloudinary.com/dusgrgnjo/image/upload/v1735642027/fuaxhmgelxkwbcm0kjey.webp",
+        data:flagsData[0].items[2]
+      },
+     
+    ]
   }
 ]

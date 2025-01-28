@@ -2,12 +2,15 @@ import React from 'react';
 import Image from './Image';
 import { Rating } from '@mui/material';
 import { Star, StarBorder, StarBorderRounded, StarRounded } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
-export default function ({ imgurl, text }) {
+export default function CardStar({ imgurl, text,data }) {
   return (
+          <Link to={`/sub/${text}`} state={{data:data}}>
+
     <div className='flex flex-row h-auto p-2 duration-300 cursor-pointer hover:scale-105 w-96'>
       <div >
-        <Image img={"https://www.dlxprint.com/images/print&marketing/booklet_printing01.webp"} className={"w-24 h-24 rounded"} />
+        <Image img={imgurl} className={"w-24 h-24 rounded"} />
       </div>
       <div className='flex flex-col ml-5 '>
         <span className='text-[18px]'>{text}</span>
@@ -19,5 +22,8 @@ export default function ({ imgurl, text }) {
       emptyIcon={<StarBorderRounded fontSize={'small'} />} // Custom empty star icon
     />      </div>
     </div>
+    </Link>
+
   );
 }
+

@@ -1,42 +1,36 @@
 import { Link, useLocation } from "react-router-dom";
-//import { navLinks } from "../../constants";
 
 const Breadcrumb = () => {
   const location = useLocation();
 
- 
+  // If on the home page, don't show breadcrumb
   if (location.pathname.toLowerCase() === "/") {
     return null;
   }
 
+  // Split the pathname into parts and remove empty segments
   const pathnames = location.pathname.split("/").filter((x) => x);
-  const homeLink = navLinks.find((link) => link.id === "home");
-  const currentLink = navLinks.find(
-    (cLink) => cLink.link.toLowerCase() === location.pathname
-  );
-
-  let currentPageTitle = currentLink ? currentLink.title : "page";
-  let pageTitle =
-    currentPageTitle === "Products" ? "Our Products" : currentPageTitle;
 
   return (
-    <nav className="leading-9 md:my-[30px] md:mx-[100px]">
-      <h3 className="text-[32px] font-bold">{pageTitle}</h3>
-      <ul className="breadcrumb">
-        {homeLink && (
-          <li key="home" id="homes">
-            <Link to="/">{homeLink.title}</Link>
-          </li>
-        )}
-        {pathnames.map((value, index) => {
-          const to = `/${pathnames.slice(0, index + 1).join("/")}`;
-          return (
-            <li key={to}>
-              <Link to={to}>{value}</Link>
-            </li>
-          );
-        })}
-      </ul>
+    <nav className="leading-9 md:my-[30px] text-gray-600">
+      {/* Home link */}
+      <Link to="/" className="font-semibold text-gray-600">
+        Home
+      </Link>
+
+      {pathnames.length > 0 && <span className="mx-2">|</span>}
+
+      {pathnames.map((value, index) => {
+        const decodedValue = decodeURIComponent(value);
+        const isLast = index === pathnames.length - 1;
+
+        return (
+          <span key={index} className="text-gray-500">
+            {decodedValue}
+            {!isLast && <span className="mx-2">|</span>}
+          </span>
+        );
+      })}
     </nav>
   );
 };

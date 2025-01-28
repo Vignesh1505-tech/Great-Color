@@ -3,9 +3,9 @@ import Header from "../Header";
 import PropTypes from "prop-types";
 
 const Layout = ({ children }) => (
-  <div className="">
+  <div className="flex flex-col min-h-screen overflow-hidden ">
     <Header />
-    <main className="">{children}</main>
+    <main className="flex-grow">{children}</main>
     <Footer />
   </div>
 );
