@@ -142,7 +142,7 @@ export const fag = [{
 }]
 
 
-export const LetterBoardTable =[
+export const LetterBoardTable = [
   {
     "quantity": "50 PCS",
     "price": "AED 65/-"
@@ -191,4 +191,20 @@ export const LetterBoardTable =[
     "quantity": "2000 PCS",
     "price": "AED 770/-"
   }
-]
+];
+
+export const Specifications = [
+  {
+    "label": "Material",
+    "value": "Eco Friendly Recycled Paper - 100gsm (White / Natural)"
+  },
+  {
+    "label": "Printing Type",
+    "value": "CMYK Method, Additional charges for spot color printing"
+  },
+  {
+    "label": "Collections",
+    "value": "24 hours (+1 or +2 days for delivery)"
+  }
+];
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import Bodytext from '../Common/Bodytext';
 
-const About = () => {
+const MovingText = () => {
   return (
     <div className='mt-[2%] '>
       <Bodytext text={"Quick Print Business Cards in Dubai, Sharjah"} className="font-semibold" />
@@ -11,4 +11,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default MovingText;

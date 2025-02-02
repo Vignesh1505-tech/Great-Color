@@ -21,7 +21,7 @@ const ImageCarousel = ({data,showThumbs}) => {
        transitionTime={500} 
        
        >
-        {data.map((item, index) => (
+        {data[1].map((item, index) => (
           <div key={index} className="relative">
             <img 
               src={item.image||item} 

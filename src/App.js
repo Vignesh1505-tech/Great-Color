@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import Fullview from '../src//components/FullView/CardFullview/Fullview';
 import { LetterBoardTable } from './constants';
 import LetterBoardView from './components/FullView/LetterBoardView/LetterBoardView';
+import EnvelopesFullView from './components/FullView/EnvelopesFullView/EnvelopesFullView';
 
 
 export default function App() {
@@ -14,7 +15,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/full' element={<Fullview/>}/>
-          <Route path='/fullletter' element={<LetterBoardView/>}/>
+          <Route path='/letterhead' element={<LetterBoardView/>}/>
+          <Route path='/envelopes' element={<EnvelopesFullView/>}></Route>
         </Routes>
       </Layout>
     </Router>
