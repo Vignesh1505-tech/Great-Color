@@ -1,0 +1,19 @@
+/* ImageCarousel.css */
+
+/* Basic styling for custom dots */
+.custom-dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    border-radius: 50%;
+    background-color: black; /* Default color for inactive dot */
+    opacity: 0.5;
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+  
+  /* Active dot styling */
+  .custom-dot.active {
+    background-color: white; /* Active dot color */
+    opacity: 1;
+  }
+  
